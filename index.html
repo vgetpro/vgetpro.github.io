@@ -125,25 +125,21 @@
         }
 
         .screenshots-wrapper {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
             gap: 20px;
-            overflow-x: auto;
             padding: 20px 0 40px;
-            scrollbar-width: none; /* Firefox */
-        }
-
-        .screenshots-wrapper::-webkit-scrollbar {
-            display: none; /* Chrome/Safari */
+            justify-items: center;
         }
 
         .screenshot-item {
-            flex: 0 0 auto;
-            width: 280px;
+            width: 100%;
+            max-width: 230px;
             border-radius: 30px;
             overflow: hidden;
             border: 6px solid var(--surface);
             box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-            transition: transform 0.4s ease;
+            transition: all 0.4s ease;
         }
 
         .screenshot-item:hover {
@@ -223,11 +219,11 @@
         <section class="gallery-section">
             <h2 class="gallery-title">Modern & Fluid Interface</h2>
             <div class="screenshots-wrapper">
-                <div class="screenshot-item"><img src="1.png" alt="VGet Pro Screen 1"></div>
-                <div class="screenshot-item"><img src="2.png" alt="VGet Pro Screen 2"></div>
-                <div class="screenshot-item"><img src="3.png" alt="VGet Pro Screen 3"></div>
-                <div class="screenshot-item"><img src="4.png" alt="VGet Pro Screen 4"></div>
-                <div class="screenshot-item"><img src="5.png" alt="VGet Pro Screen 5"></div>
+                <div class="screenshot-item"><img src="img/1.png" alt="VGet Pro Screen 1"></div>
+                <div class="screenshot-item"><img src="img/2.png" alt="VGet Pro Screen 2"></div>
+                <div class="screenshot-item"><img src="img/3.png" alt="VGet Pro Screen 3"></div>
+                <div class="screenshot-item"><img src="img/4.png" alt="VGet Pro Screen 4"></div>
+                <div class="screenshot-item"><img src="img/5.png" alt="VGet Pro Screen 5"></div>
             </div>
         </section>
 
